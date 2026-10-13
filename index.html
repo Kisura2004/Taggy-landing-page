@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taggy - The Smart Contacts Platform for the Real World</title>
+  <meta name="description" content="Taggy is the smart business card and contactless networking platform. Make great first impressions, remember who you meet, and keep the follow-up moving.">
+  
+  <link rel="canonical" href="https://taptaggy.com/">
+  <meta property="og:url" content="https://taptaggy.com/">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="Images/taggy-logo.jpeg">
+  
+  <!-- Google Fonts: Newsreader Editorial Serif & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- SpaceFS Subtle Interactive Constellation Canvas Background -->
+  <canvas id="spacefs-canvas"></canvas>
+
+  <div class="main-wrapper">
+
+    <!-- ========================================================================
+         NAVBAR (Exact Blinq Floating Header with Mega Dropdowns & Theme Toggle)
+         ======================================================================== -->
+    <header class="nav-wrap" id="main-nav">
+      <div class="v2-container">
+        <div class="nav-inner">
+          
+          <!-- Taggy Official Logo -->
+          <a href="#" class="nav-logo" aria-label="Taggy Home">
+            <img src="Images/taggy-logo-transparent.png" alt="Taggy Logo" class="taggy-logo-img logo-light">
+            <img src="Images/taggy-logo-white.png" alt="Taggy Logo" class="taggy-logo-img logo-dark">
+          </a>
+
+          <!-- Nav Links Parent -->
+          <nav class="nav-links-parent" aria-label="Main Navigation">
+            <a href="#sticky-cards" class="nav-link">Digital Business Cards</a>
+            <a href="#team-pipeline" class="nav-link">Event Lead Capture</a>
+            
+            <!-- Solutions Dropdown -->
+            <div class="nav-item-dropdown">
+              <a href="#bento-share" class="nav-link">
+                <span>Solutions</span>
+                <svg class="chevron" viewBox="0 0 24 24" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="nav-dropdown-content">
+                <a href="#bento-share" class="dropdown-item">
+                  <div class="dropdown-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="3"></rect><circle cx="8" cy="10" r="2"></circle></svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <strong>NFC Business Cards</strong>
+                    <span>Tactile embossed smart contactless cards</span>
+                  </div>
+                </a>
+                <a href="#bento-share" class="dropdown-item">
+                  <div class="dropdown-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <strong>Apple & Google Wallet</strong>
+                    <span>One-tap sharing right from your lockscreen pass</span>
+                  </div>
+                </a>
+                <a href="#bento-share" class="dropdown-item">
+                  <div class="dropdown-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path></svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <strong>Smart Watch</strong>
+                    <span>Always ready to exchange with watch QR code</span>
+                  </div>
+                </a>
+                <a href="#bento-share" class="dropdown-item">
+                  <div class="dropdown-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <strong>Email Signatures</strong>
+                    <span>Dynamic interactive signatures for your entire team</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- For Teams Dropdown -->
+            <div class="nav-item-dropdown">
+              <a href="#team-control" class="nav-link">
+                <span>For Teams</span>
+                <svg class="chevron" viewBox="0 0 24 24" fill="none"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <div class="nav-dropdown-content">
+                <a href="#team-control" class="dropdown-item">
+                  <div class="dropdown-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <strong>Brand & Template Control</strong>
+                    <span>Lock logos, colors, fonts, and bulk update in real time</span>
+                  </div>
+                </a>
+                <a href="#integrations" class="dropdown-item">
+                  <div class="dropdown-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <strong>CRM Integrations</strong>
+                    <span>Auto-sync with Salesforce, HubSpot, and Zoho</span>
+                  </div>
+                </a>
+                <a href="#security" class="dropdown-item">
+                  <div class="dropdown-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <strong>Enterprise Security</strong>
+                    <span>SOC 2 Type II, SSO, and SCIM directory sync</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <a href="#faq" class="nav-link">FAQ</a>
+          </nav>
+
+          <!-- Nav Right Actions -->
+          <div class="nav-actions">
+            <!-- Theme Switcher -->
+            <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Light/Dark Theme">
+              <svg id="theme-icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+              <svg id="theme-icon-sun" style="display:none;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
+
+            <a href="#prefooter" class="nav-login-link">Login</a>
+            <a href="#team-control" class="button-pri black">Book a demo</a>
+            <a href="#prefooter" class="button-pri">Get your Taggy business card</a>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ========================================================================
+           SECTION 1: HERO SECTION (.v2-section.top-round.for-home)
+           Exact Blinq Hero: Editorial Serif H1, Dual Buttons, 4 Social Badges & Video
+           ======================================================================== -->
+      <section class="v2-section top-round for-home" id="hero">
+        <div class="v2-container">
+
+          <h1 class="hero-title">
+            The smart contacts platform for the real world
+          </h1>
+          
+          <p class="hero-subtitle">
+            Make great first impressions, remember who you meet, and keep the follow-up moving.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="btn-wrap">
+            <a href="#prefooter" class="button-pri">Get your Taggy business card</a>
+            <a href="#team-control" class="button-pri black">For teams</a>
+          </div>
+
+          <!-- Video Showcase Container (Exact Blinq Video Frame) -->
+          <div class="home-hero-video-wrap">
+            <video id="hero-main-video" class="hero-video" autoplay loop muted playsinline preload="auto">
+              <source src="resources/taggy-video.mp4" type="video/mp4">
+              <source src="Images/taggy-hero-video.mp4" type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================================
+           SECTION 2: SOCIAL PROOF MARQUEE (.v2-section.for-home-logos)
+           Exact Blinq Ribbon: "4 million people in 500K companies use Taggy"
+           ======================================================================== -->
+      <section class="v2-section for-home-logos">
+        <div class="v2-container">
+          <h2 class="marquee-heading serif-heading">
+            4 million people in 500K companies use Taggy
+          </h2>
+
+          <div class="marquee-container">
+            <div class="marquee-track">
+              <div class="logo-pill">Salesforce</div>
+              <div class="logo-pill">Google</div>
+              <div class="logo-pill">Deloitte</div>
+              <div class="logo-pill">Uber</div>
+              <div class="logo-pill">Amazon</div>
+              <div class="logo-pill">Nike</div>
+              <div class="logo-pill">Tesla</div>
+              <div class="logo-pill">Stripe</div>
+              <div class="logo-pill">Airbnb</div>
+              <div class="logo-pill">Microsoft</div>
+              <!-- Duplicate for seamless loop -->
+              <div class="logo-pill">Salesforce</div>
+              <div class="logo-pill">Google</div>
+              <div class="logo-pill">Deloitte</div>
+              <div class="logo-pill">Uber</div>
+              <div class="logo-pill">Amazon</div>
+              <div class="logo-pill">Nike</div>
+              <div class="logo-pill">Tesla</div>
+              <div class="logo-pill">Stripe</div>
+              <div class="logo-pill">Airbnb</div>
+              <div class="logo-pill">Microsoft</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================================
+           SECTION 3: DARK COFFEE CAPSULE (.v3-section-new.v2-top-round.v2-coffee)
+           Taggy Live Card Transformation Engine & Interactive Gateway Scrubber
+           ======================================================================== -->
+      <section class="v3-section-new v2-coffee transformation-section" id="transformation">
+        <div class="transformation-sticky-track">
+          <div class="v2-container">
+            
+            <div class="v2-coffee-inner">
+              <div>
+                <h2 class="coffee-title">Watch visiting cards evolve into Taggy</h2>
+              </div>
+              <div>
+                <p class="coffee-desc">
+                  Watch traditional paper visiting cards glide into the Taggy portal, instantly emerging as contactless luxury digital smart cards.
+                </p>
+              </div>
+            </div>
+
+            <!-- TAGGY CARDS CONVEYOR TRAIN TRANSFORMATION STAGE -->
+            <div class="cards-train-stage" id="cards-train-stage">
+              
+              <!-- Center Taggy Conversion Gateway Portal -->
+              <div class="taggy-portal-gateway">
+                <div class="portal-badge-top">
+                  <img src="Images/taggy-logo-white.png" alt="Taggy Logo" class="portal-logo-img">
+                  <span>TAGGY GATEWAY</span>
+                </div>
+                <div class="portal-scanner-laser"></div>
+                <div class="portal-badge-bottom">
+                  <span>NFC ENCODING</span>
+                </div>
+              </div>
+
+              <!-- Dual-Layer Synchronized Train Conveyor Track -->
+              <div class="train-track-viewport" id="train-track-viewport">
+                
+                <!-- LAYER 1: INCOMING PAPER CARDS TRAIN (Visible on the left half of the portal) -->
+                <div class="train-split-layer paper-split-layer" id="train-paper-layer">
+                  <div class="train-carriages-rail" id="train-carriages-paper">
+                    
+                    <!-- Carriage 1: Vance Paper -->
+                    <div class="train-card-unit" data-card-idx="0">
+                      <div class="card-sample-paper">
+                        <div class="card-tier-top">
+                          <div class="paper-brand-text">
+                            <svg class="paper-logo-icon" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2L2 12l10 10 10-10L12 2z"/></svg>
+                            <span>HORIZON LABS</span>
+                          </div>
+                          <span class="paper-est-tag">EST. 2018</span>
+                        </div>
+                        <div class="card-tier-center">
+                          <div class="card-paper-name">Alexander Vance</div>
+                          <div class="card-paper-title">Founder &bull; Managing Director</div>
+                        </div>
+                        <div class="card-tier-bottom">
+                          <div class="card-paper-contact">
+                            <div>+94 (77) 321-4567</div>
+                            <div>a.vance@horizon.co</div>
+                          </div>
+                          <div class="card-paper-badge">
+                            <span>TRADITIONAL PAPER</span>
+                            <small>Disposable</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Carriage 2: Chen Paper -->
+                    <div class="train-card-unit" data-card-idx="1">
+                      <div class="card-sample-paper">
+                        <div class="card-tier-top">
+                          <div class="paper-brand-text">
+                            <svg class="paper-logo-icon" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2L2 12l10 10 10-10L12 2z"/></svg>
+                            <span>APEX VENTURES</span>
+                          </div>
+                          <span class="paper-est-tag">EST. 2021</span>
+                        </div>
+                        <div class="card-tier-center">
+                          <div class="card-paper-name">Sarah Chen</div>
+                          <div class="card-paper-title">General Partner &bull; Tech Fund</div>
+                        </div>
+                        <div class="card-tier-bottom">
+                          <div class="card-paper-contact">
+                            <div>+94 (71) 840-2911</div>
+                            <div>s.chen@apexvc.io</div>
+                          </div>
+                          <div class="card-paper-badge">
+                            <span>TRADITIONAL PAPER</span>
+                            <small>Disposable</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Carriage 3: Sterling Paper -->
+                    <div class="train-card-unit" data-card-idx="2">
+                      <div class="card-sample-paper">
+                        <div class="card-tier-top">
+                          <div class="paper-brand-text">
+                            <svg class="paper-logo-icon" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2L2 12l10 10 10-10L12 2z"/></svg>
+                            <span>STERLING ARCHITECTURE</span>
+                          </div>
+                          <span class="paper-est-tag">EST. 2015</span>
+                        </div>
+                        <div class="card-tier-center">
+                          <div class="card-paper-name">Marcus Sterling</div>
+                          <div class="card-paper-title">Principal &bull; Urban Architecture</div>
+                        </div>
+                        <div class="card-tier-bottom">
+                          <div class="card-paper-contact">
+                            <div>+94 (76) 554-1290</div>
+                            <div>m.sterling@sterling.arch</div>
+                          </div>
+                          <div class="card-paper-badge">
+                            <span>TRADITIONAL PAPER</span>
+                            <small>Disposable</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Carriage 4: Rostova Paper -->
+                    <div class="train-card-unit" data-card-idx="3">
+                      <div class="card-sample-paper">
+                        <div class="card-tier-top">
+                          <div class="paper-brand-text">
+                            <svg class="paper-logo-icon" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2L2 12l10 10 10-10L12 2z"/></svg>
+                            <span>BIOGENESIS DYNAMICS</span>
+                          </div>
+                          <span class="paper-est-tag">EST. 2019</span>
+                        </div>
+                        <div class="card-tier-center">
+                          <div class="card-paper-name">Dr. Elena Rostova</div>
+                          <div class="card-paper-title">VP &bull; Head of Discovery</div>
+                        </div>
+                        <div class="card-tier-bottom">
+                          <div class="card-paper-contact">
+                            <div>+94 (70) 992-4100</div>
+                            <div>e.rostova@biogenesis.com</div>
+                          </div>
+                          <div class="card-paper-badge">
+                            <span>TRADITIONAL PAPER</span>
+                            <small>Disposable</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Carriage 5: Silva Paper -->
+                    <div class="train-card-unit" data-card-idx="4">
+                      <div class="card-sample-paper">
+                        <div class="card-tier-top">
+                          <div class="paper-brand-text">
+                            <svg class="paper-logo-icon" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2L2 12l10 10 10-10L12 2z"/></svg>
+                            <span>STUDIO PULSE</span>
+                          </div>
+                          <span class="paper-est-tag">EST. 2022</span>
+                        </div>
+                        <div class="card-tier-center">
+                          <div class="card-paper-name">David Silva</div>
+                          <div class="card-paper-title">Creative Director &bull; Brand Studio</div>
+                        </div>
+                        <div class="card-tier-bottom">
+                          <div class="card-paper-contact">
+                            <div>+94 (77) 601-8833</div>
+                            <div>david@studiopulse.design</div>
+                          </div>
+                          <div class="card-paper-badge">
+                            <span>TRADITIONAL PAPER</span>
+                            <small>Disposable</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- LAYER 2: EMERGING TAGGY SMART CARDS TRAIN (Visible on the right half of the portal) -->
+                <div class="train-split-layer taggy-split-layer" id="train-taggy-layer">
+                  <div class="train-carriages-rail" id="train-carriages-taggy">
+                    
+                    <!-- Carriage 1: Vance Taggy -->
+                    <div class="train-card-unit" data-card-idx="0">
+                      <div class="card-sample-taggy" style="background: linear-gradient(140deg, #1d1815 0%, #0d0a08 55%, #181310 100%); border-color: rgba(212, 175, 55, 0.42);">
+                        <div class="card-tier-top">
+                          <div class="card-contactless-wave" style="color: #d4af37;">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M8 17a5 5 0 0 1 0-10"></path><path d="M12 20a9 9 0 0 1 0-16"></path><path d="M16 23a13 13 0 0 1 0-22"></path></svg>
+                          </div>
+                          <div class="card-taggy-brand">
+                            <img src="Images/taggy-logo-white.png" alt="Taggy Logo" class="taggy-card-official-logo">
+                          </div>
+                        </div>
+                        <div class="card-tier-center">
+                          <div class="card-emboss-name">Alexander Vance</div>
+                          <div class="card-emboss-title">FOUNDER &bull; MANAGING DIRECTOR</div>
+                        </div>
+                        <div class="card-tier-bottom">
+                          <div class="card-smart-contact">
+                            <div>+94 (77) 321-4567</div>
+                            <div>a.vance@horizon.co</div>
+                          </div>
+                          <div class="card-smart-badge" style="color: #d4af37;">
+                            <span class="nfc-dot"></span>
+                            <span>TAP TO CONNECT</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Carriage 2: Chen Taggy -->
+                    <div class="train-card-unit" data-card-idx="1">
+                      <div class="card-sample-taggy" style="background: linear-gradient(140deg, #14161b 0%, #0c0d10 55%, #181b22 100%); border-color: rgba(220, 225, 235, 0.45);">
+                        <div class="card-tier-top">
+                          <div class="card-contactless-wave" style="color: #dce1eb;">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M8 17a5 5 0 0 1 0-10"></path><path d="M12 20a9 9 0 0 1 0-16"></path><path d="M16 23a13 13 0 0 1 0-22"></path></svg>
+                          </div>
+                          <div class="card-taggy-brand">
+                            <img src="Images/taggy-logo-white.png" alt="Taggy Logo" class="taggy-card-official-logo">
+                          </div>
+                        </div>
+                        <div class="card-tier-center">
+                          <div class="card-emboss-name">Sarah Chen</div>
+                          <div class="card-emboss-title">GENERAL PARTNER &bull; TECH FUND</div>
+                        </div>
+                        <div class="card-tier-bottom">
+                          <div class="card-smart-contact">
+                            <div>+94 (71) 840-2911</div>
+                            <div>s.chen@apexvc.io</div>
+                          </div>
+                          <div class="card-smart-badge" style="color: #dce1eb;">
+                            <span class="nfc-dot"></span>
+                            <span>TAP TO CONNECT</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Carriage 3: Sterling Taggy -->
+                    <div class="train-card-unit" data-card-idx="2">
+                      <div class="card-sample-taggy" style="background: linear-gradient(140deg, #17181c 0%, #0e0f12 55%, #1b1d22 100%); border-color: rgba(224, 197, 138, 0.45);">
+                        <div class="card-tier-top">
+                          <div class="card-contactless-wave" style="color: #e0c58a;">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M8 17a5 5 0 0 1 0-10"></path><path d="M12 20a9 9 0 0 1 0-16"></path><path d="M16 23a13 13 0 0 1 0-22"></path></svg>
+                          </div>
+                          <div class="card-taggy-brand">
+                            <img src="Images/taggy-logo-white.png" alt="Taggy Logo" class="taggy-card-official-logo">
+                          </div>
+                        </div>
+                        <div class="card-tier-center">
+                          <div class="card-emboss-name">Marcus Sterling</div>
+                          <div class="card-emboss-title">PRINCIPAL &bull; URBAN ARCHITECTURE</div>
+                        </div>
+                        <div class="card-tier-bottom">
+                          <div class="card-smart-contact">
+                            <div>+94 (76) 554-1290</div>
+                            <div>m.sterling@sterling.arch</div>
+                          </div>
+                          <div class="card-smart-badge" style="color: #e0c58a;">
+                            <span class="nfc-dot"></span>
+                            <span>TAP TO CONNECT</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Carriage 4: Rostova Taggy -->
+                    <div class="train-card-unit" data-card-idx="3">
+                      <div class="card-sample-taggy" style="background: linear-gradient(140deg, #101418 0%, #090c0e 55%, #12181e 100%); border-color: rgba(121, 213, 232, 0.45);">
+                        <div class="card-tier-top">
+                          <div class="card-contactless-wave" style="color: #79d5e8;">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M8 17a5 5 0 0 1 0-10"></path><path d="M12 20a9 9 0 0 1 0-16"></path><path d="M16 23a13 13 0 0 1 0-22"></path></svg>
+                          </div>
+                          <div class="card-taggy-brand">
+                            <img src="Images/taggy-logo-white.png" alt="Taggy Logo" class="taggy-card-official-logo">
+                          </div>
+                        </div>
+                        <div class="card-tier-center">
+                          <div class="card-emboss-name">Dr. Elena Rostova</div>
+                          <div class="card-emboss-title">VP &bull; HEAD OF DISCOVERY</div>
+                        </div>
+                        <div class="card-tier-bottom">
+                          <div class="card-smart-contact">
+                            <div>+94 (70) 992-4100</div>
+                            <div>e.rostova@biogenesis.com</div>
+                          </div>
+                          <div class="card-smart-badge" style="color: #79d5e8;">
+                            <span class="nfc-dot"></span>
+                            <span>TAP TO CONNECT</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Carriage 5: Silva Taggy -->
+                    <div class="train-card-unit" data-card-idx="4">
+                      <div class="card-sample-taggy" style="background: linear-gradient(140deg, #181211 0%, #0d0a0a 55%, #1d1413 100%); border-color: rgba(230, 159, 115, 0.45);">
+                        <div class="card-tier-top">
+                          <div class="card-contactless-wave" style="color: #e69f73;">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M8 17a5 5 0 0 1 0-10"></path><path d="M12 20a9 9 0 0 1 0-16"></path><path d="M16 23a13 13 0 0 1 0-22"></path></svg>
+                          </div>
+                          <div class="card-taggy-brand">
+                            <img src="Images/taggy-logo-white.png" alt="Taggy Logo" class="taggy-card-official-logo">
+                          </div>
+                        </div>
+                        <div class="card-tier-center">
+                          <div class="card-emboss-name">David Silva</div>
+                          <div class="card-emboss-title">CREATIVE DIRECTOR &bull; BRAND STUDIO</div>
+                        </div>
+                        <div class="card-tier-bottom">
+                          <div class="card-smart-contact">
+                            <div>+94 (77) 601-8833</div>
+                            <div>david@studiopulse.design</div>
+                          </div>
+                          <div class="card-smart-badge" style="color: #e69f73;">
+                            <span class="nfc-dot"></span>
+                            <span>TAP TO CONNECT</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================================
+           SECTION 4: STICKY STACKING CARDS (.v3-section-new.v2-top-round.v2-neutral-2)
+           Card-Shaped Deck: Previous Cards Visible at Top • Zero Weird Numbering
+           ======================================================================== -->
+      <section class="v3-section-new v2-top-round v2-neutral-2 stack-section" id="sticky-cards">
+        <div class="v2-container">
+          
+          <div class="stack-header-wrap">
+            <h2 class="section-title t-center">
+              Convert first impressions into connections that count
+            </h2>
+          </div>
+
+          <div class="stack-cards-container">
+            
+            <!-- CARD 1: Digital Business Cards -->
+            <div class="stack-card" id="card-1">
+              <div class="stack-card-content">
+                <span class="stack-card-tag">Share Who You Are</span>
+                <h3 class="stack-card-title">A business card that opens doors</h3>
+                <p class="stack-card-desc">
+                  Share who you are in seconds: tap, QR code, or Apple Wallet. The person you meet saves it straight to their phone with nothing to download, and can share their details back in the flow.
+                </p>
+                <div class="stack-review-quote">
+                  <svg viewBox="0 0 24 24" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <span>"Way more responses than I've had with traditional paper cards." &bull; <strong>Diego, Trustpilot</strong></span>
+                </div>
+                <div class="btn-wrap" style="justify-content: flex-start;">
+                  <a href="#prefooter" class="button-pri">Get your Taggy business card</a>
+                  <a href="#team-control" class="button-pri outline">Explore card features</a>
+                </div>
+              </div>
+              <div class="stack-visual-box coral-bg">
+                <div class="phone-sim-card">
+                  <img src="Images/taggy-logo.jpeg" alt="Sophie Jones" class="phone-sim-avatar">
+                  <div class="phone-sim-name">Sophie Jones</div>
+                  <div class="phone-sim-role">SVP, Product Strategy &bull; Horizon</div>
+                  <div class="phone-sim-actions">
+                    <div class="sim-btn-pill">sophie.jones@horizon.co</div>
+                    <div class="sim-btn-pill">+1 (646) 555-0224</div>
+                    <div class="sim-btn-pill" style="background: #ff492c; color: #fff;">Save Contact Instantly</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 2: Contactless Instant Exchange -->
+            <div class="stack-card" id="card-2">
+              <div class="stack-card-content">
+                <span class="stack-card-tag">Tap To Exchange</span>
+                <h3 class="stack-card-title">From tap to saved contact in one go</h3>
+                <p class="stack-card-desc">
+                  Built on instant contactless NFC. Simply tap your Taggy card to any iPhone or Android phone to launch your interactive card, portfolio, and contact vCard with zero friction.
+                </p>
+                <div class="stack-review-quote">
+                  <svg viewBox="0 0 24 24" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <span>"Never carrying paper cards again. The tap experience is magical." &bull; <strong>App Store</strong></span>
+                </div>
+                <div class="btn-wrap" style="justify-content: flex-start;">
+                  <a href="#prefooter" class="button-pri">Get your Taggy business card</a>
+                  <a href="#team-control" class="button-pri outline">View card designs</a>
+                </div>
+              </div>
+              <div class="stack-visual-box sand-bg">
+                <div class="phone-sim-card" style="transform: rotate(-3deg);">
+                  <div style="font-size: 0.8rem; font-weight: 700; color: #ff492c; text-transform: uppercase;">TAP DETECTED</div>
+                  <div style="margin: 1rem 0; width: 56px; height: 56px; border-radius: 50%; background: #ff492c; color: #fff; display: grid; place-items: center; margin: 1rem auto;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <div class="phone-sim-name">Contact Transferred</div>
+                  <div class="phone-sim-role">Saved directly into Apple Contacts</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 3: Intelligent Contact Enrichment -->
+            <div class="stack-card" id="card-3">
+              <div class="stack-card-content">
+                <span class="stack-card-tag">Remember Who You Meet</span>
+                <h3 class="stack-card-title">Contacts made complete in seconds</h3>
+                <p class="stack-card-desc">
+                  Start with a name, email, or badge scan. Taggy automatically populates verified job titles, companies, LinkedIn profiles, and verified emails while you're still talking.
+                </p>
+                <div class="stack-review-quote">
+                  <svg viewBox="0 0 24 24" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <span>"I get their info AND it's an instant conversation starter." &bull; <strong>Capterra</strong></span>
+                </div>
+                <div class="btn-wrap" style="justify-content: flex-start;">
+                  <a href="#prefooter" class="button-pri">Get your Taggy business card</a>
+                  <a href="#team-control" class="button-pri outline">Explore Enrichment</a>
+                </div>
+              </div>
+              <div class="stack-visual-box sage-bg">
+                <div class="phone-sim-card">
+                  <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; justify-content: center;">
+                    <div style="width: 8px; height: 8px; border-radius: 50%; background: #28850f;"></div>
+                    <span style="font-size: 0.75rem; font-weight: 700; color: #28850f;">VERIFIED VIA LINKEDIN</span>
+                  </div>
+                  <div class="phone-sim-name">Steph Kim</div>
+                  <div class="phone-sim-role">Founder & CEO &bull; Offset Artisan Bakehouse</div>
+                  <div class="phone-sim-actions">
+                    <div class="sim-btn-pill">linkedin.com/in/stephkim</div>
+                    <div class="sim-btn-pill">+1 (415) 555-0167</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 4: Context & Follow-Up Notes -->
+            <div class="stack-card" id="card-4">
+              <div class="stack-card-content">
+                <span class="stack-card-tag">Never Lose The Context</span>
+                <h3 class="stack-card-title">Keep the context, not just the contact</h3>
+                <p class="stack-card-desc">
+                  Remember where and when you met. Taggy geo-tags connection events, lets you dictate voice or text follow-up notes, and reminds you when it's time to reach out.
+                </p>
+                <div class="stack-review-quote">
+                  <svg viewBox="0 0 24 24" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <span>"Never again wondered 'Where did I meet this person?'" &bull; <strong>G2 Crowd</strong></span>
+                </div>
+                <div class="btn-wrap" style="justify-content: flex-start;">
+                  <a href="#prefooter" class="button-pri">Get your Taggy business card</a>
+                  <a href="#team-control" class="button-pri outline">See Meeting Context</a>
+                </div>
+              </div>
+              <div class="stack-visual-box blue-bg">
+                <div class="phone-sim-card">
+                  <div style="font-size: 0.8rem; font-weight: 600; color: #555; margin-bottom: 0.5rem;">San Francisco Summit &bull; Hall B</div>
+                  <div style="background: #f7f4ed; border-radius: 12px; padding: 0.75rem; text-align: left; font-size: 0.85rem; color: #222; margin-bottom: 0.75rem;">
+                    "Discussed Series B round & enterprise roll-out for Q4."
+                  </div>
+                  <div class="sim-btn-pill" style="background: #1f1511; color: #fff;">Follow-up scheduled for Tuesday</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 5: CRM Direct Integration -->
+            <div class="stack-card" id="card-5">
+              <div class="stack-card-content">
+                <span class="stack-card-tag">Integrations &amp; Pipeline</span>
+                <h3 class="stack-card-title">Follow up wherever you work</h3>
+                <p class="stack-card-desc">
+                  The contact and the context land wherever you follow up: CRM, phonebook, email, or your team pipeline. Give your next conversation a head start, with the details from the first.
+                </p>
+                <div class="stack-review-quote">
+                  <svg viewBox="0 0 24 24" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <span>"Saves our sales team at least 4 hours every single week." &bull; <strong>Diego, Trustpilot</strong></span>
+                </div>
+                <div class="btn-wrap" style="justify-content: flex-start;">
+                  <a href="#prefooter" class="button-pri">Get your Taggy business card</a>
+                  <a href="#team-control" class="button-pri outline">Explore Integrations</a>
+                </div>
+              </div>
+              <div class="stack-visual-box lavender-bg">
+                <div class="phone-sim-card">
+                  <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: #ff7a59; margin-bottom: 0.5rem;">
+                    <span>HUBSPOT CRM</span>
+                    <span>DEAL CREATED</span>
+                  </div>
+                  <div class="phone-sim-name">$84,000 Opportunity</div>
+                  <div class="phone-sim-role">Lead assigned to North America Sales</div>
+                  <div class="sim-btn-pill" style="background: #28850f; color: #fff;">Synced in Real Time</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================================
+           SECTION 5: TEAM & BRAND CONTROL (.v3-section-new.v2-top-round)
+           "Stack the cards in your team's favor"
+           ======================================================================== -->
+      <section class="v3-section-new v2-top-round" id="team-control">
+        <div class="v2-container">
+          
+          <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">Stack the cards in your team's favor</h2>
+            <p class="hero-subtitle">
+              Your people are your first impression. Taggy makes sure it's on brand, secure, and that good conversations turn into pipeline.
+            </p>
+          </div>
+
+          <div class="team-control-grid">
+            
+            <!-- Feature 1: Brand Control -->
+            <div class="team-feature-card">
+              <div>
+                <span class="team-badge-pill">Brand Control</span>
+                <h3 class="sub-title">Put your best team forward</h3>
+                <p style="margin-top: 1rem;">
+                  Digital business cards, email signatures, and virtual backgrounds managed from one place. Lock the logo, colors, and typography, and let your team personalize the rest. Every card updates the moment details change.
+                </p>
+              </div>
+              <div class="team-feature-preview">
+                <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem;">Centralized Admin Governance</div>
+                <div style="background: #ffffff; border-radius: 12px; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-weight: 700; color: var(--ink);">Locked Corporate Assets</span>
+                  <span style="padding: 0.25rem 0.6rem; border-radius: 9999px; background: #eef8ee; color: #28850f; font-size: 0.75rem; font-weight: 700;">ACTIVE</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature 2: Handshake to Pipeline -->
+            <div class="team-feature-card" id="team-pipeline">
+              <div>
+                <span class="team-badge-pill" style="background: var(--brand);">Lead Capture</span>
+                <h3 class="sub-title">From handshake to pipeline</h3>
+                <p style="margin-top: 1rem;">
+                  Capture leads at conferences and send them to your CRM with notes, tags, and qualifying details. Give your sales reps what they need to follow up, and track pipeline ROI for every event.
+                </p>
+              </div>
+              <div class="team-feature-preview">
+                <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem;">Event Lead Analytics</div>
+                <div style="background: #ffffff; border-radius: 12px; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-weight: 700; color: var(--ink);">Pipeline Generated</span>
+                  <span style="font-weight: 800; color: var(--brand); font-size: 1.1rem;">$116,100</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================================
+           SECTION 6: EXACT BLINQ BENTO GRID (.bs-grid)
+           "Scan it. Tap it. Link it. Taggy it."
+           ======================================================================== -->
+      <section class="v3-section-new v2-top-round v2-neutral-2" id="bento-share">
+        <div class="v2-container">
+          
+          <div style="text-align: center; max-width: 800px; margin: 0 auto 3.5rem;">
+            <h2 class="section-title">Scan it. Tap it. Link it. Taggy it.</h2>
+            <p class="hero-subtitle">Every way you want to share, all connected in one place.</p>
+          </div>
+
+          <div class="blinq-share">
+            <div class="bs-grid">
+
+              <!-- 1. Email Signatures -->
+              <a class="tile t-email" href="#prefooter">
+                <div class="tile__media">
+                  <div style="background: #ffffff; border-radius: 12px; padding: 1rem; width: 88%; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                    <div style="font-size: 0.85rem; font-weight: 700; color: #1f1511;">Alex Morgan</div>
+                    <div style="font-size: 0.75rem; color: #666;">Founder & CEO &bull; Taggy</div>
+                    <div style="font-size: 0.7rem; color: #ff492c; margin-top: 0.4rem; font-weight: 600;">alex@taptaggy.com &bull; taptaggy.com</div>
+                  </div>
+                </div>
+                <div class="tile__foot">
+                  <div class="tile__row">
+                    <span class="tile__label">Email Signatures</span>
+                    <span class="arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  </div>
+                  <div class="tile__desc"><p>Extend your brand into every email with logos, links and live contact cards.</p></div>
+                </div>
+              </a>
+
+              <!-- 2. NFC Accessories -->
+              <a class="tile t-nfc" href="#prefooter">
+                <div class="tile__media" style="background: #2b1f1a;">
+                  <div style="width: 190px; height: 120px; background: linear-gradient(135deg, #1f1511, #3b2820); border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; padding: 1rem; color: #fff; box-shadow: 0 15px 35px rgba(0,0,0,0.4); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div style="font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; color: #ff6552;">TAGGY EMBOSSED</div>
+                    <div style="font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em;">ALEX MORGAN</div>
+                  </div>
+                </div>
+                <div class="tile__foot">
+                  <div class="tile__row">
+                    <span class="tile__label">NFC Business Cards</span>
+                    <span class="arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  </div>
+                  <div class="tile__desc"><p>Tactile smart cards with raised embossing, directly connected to your Taggy profile.</p></div>
+                </div>
+              </a>
+
+              <!-- 3. Virtual Backgrounds -->
+              <a class="tile t-virt" href="#prefooter">
+                <div class="tile__media" style="background: #d4cec1;">
+                  <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1f1511" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    <span style="font-size: 0.85rem; font-weight: 700; color: #1f1511;">Zoom & Teams QR</span>
+                  </div>
+                </div>
+                <div class="tile__foot">
+                  <div class="tile__row">
+                    <span class="tile__label">Virtual Backgrounds</span>
+                    <span class="arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  </div>
+                  <div class="tile__desc"><p>Place your personalized QR backdrop on video calls for effortless attendee capture.</p></div>
+                </div>
+              </a>
+
+              <!-- 4. Smart Watch -->
+              <a class="tile t-watch" href="#prefooter">
+                <div class="tile__media" style="background: #e5e0d3;">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1f1511" stroke-width="2"><circle cx="12" cy="12" r="7"></circle><path d="M12 9v3l1.5 1.5"></path></svg>
+                </div>
+                <div class="tile__foot">
+                  <div class="tile__row">
+                    <span class="tile__label">Smart Watch</span>
+                    <span class="arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  </div>
+                  <div class="tile__desc"><p>With Taggy on your Apple Watch or WearOS, there's always time for networking.</p></div>
+                </div>
+              </a>
+
+              <!-- 5. Apple & Google Wallet -->
+              <a class="tile t-wallet" href="#prefooter">
+                <div class="tile__media" style="background: #ffe7b0;">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1f1511" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                </div>
+                <div class="tile__foot">
+                  <div class="tile__row">
+                    <span class="tile__label">Wallet</span>
+                    <span class="arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  </div>
+                  <div class="tile__desc"><p>One tap away from sharing directly from your Apple or Google Wallet pass.</p></div>
+                </div>
+              </a>
+
+              <!-- 6. Widgets -->
+              <a class="tile t-widget" href="#prefooter">
+                <div class="tile__media" style="background: #ffb8e7;">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1f1511" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                </div>
+                <div class="tile__foot">
+                  <div class="tile__row">
+                    <span class="tile__label">Widgets</span>
+                    <span class="arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  </div>
+                  <div class="tile__desc"><p>On your mobile lock screen, Taggy is just one swipe away from a connection.</p></div>
+                </div>
+              </a>
+
+              <!-- 7. QR Codes -->
+              <a class="tile t-qr" href="#prefooter">
+                <div class="tile__media" style="background: #6db9dd;">
+                  <div style="background: #ffffff; padding: 0.75rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.15);">
+                    <svg width="44" height="44" viewBox="0 0 24 24" fill="#1f1511"><path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm13-2h3v2h-3zm-5 0h2v3h-2zm2 5h3v3h-3zm-2-2h2v2h-2zm4 2h2v2h-2z"/></svg>
+                  </div>
+                </div>
+                <div class="tile__foot">
+                  <div class="tile__row">
+                    <span class="tile__label">QR Codes</span>
+                    <span class="arrow"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  </div>
+                  <div class="tile__desc"><p>Share cards with a fast QR scan. Recipients never need an app to save your details.</p></div>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================================
+           SECTION 7: CRM & WORKFLOW INTEGRATIONS (.v3-section-new.v2-top-round)
+           "Contacts with context, everywhere you work"
+           ======================================================================== -->
+      <section class="v3-section-new v2-top-round" id="integrations">
+        <div class="v2-container">
+          
+          <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">Contacts with context, everywhere you work</h2>
+            <p class="hero-subtitle">
+              Seamlessly integrates with the CRM platforms, communication channels, and identity providers your team uses every single day.
+            </p>
+          </div>
+
+          <div class="integrations-grid">
+            <div class="integration-card">
+              <div class="integration-icon">HS</div>
+              <div class="integration-name">HubSpot</div>
+              <div class="integration-status">Two-Way Live Sync</div>
+            </div>
+            <div class="integration-card">
+              <div class="integration-icon">SF</div>
+              <div class="integration-name">Salesforce</div>
+              <div class="integration-status">Enterprise Verified</div>
+            </div>
+            <div class="integration-card">
+              <div class="integration-icon">ZH</div>
+              <div class="integration-name">Zoho CRM</div>
+              <div class="integration-status">Real-time Pipeline</div>
+            </div>
+            <div class="integration-card">
+              <div class="integration-icon">MS</div>
+              <div class="integration-name">Dynamics 365</div>
+              <div class="integration-status">Automated Lead Entry</div>
+            </div>
+            <div class="integration-card">
+              <div class="integration-icon">ZP</div>
+              <div class="integration-name">Zapier</div>
+              <div class="integration-status">5,000+ App Triggers</div>
+            </div>
+            <div class="integration-card">
+              <div class="integration-icon">SL</div>
+              <div class="integration-name">Slack</div>
+              <div class="integration-status">Instant Lead Alerts</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================================
+           SECTION 8: G2 BADGE & ENTERPRISE SECURITY (.v2-section.top-round)
+           "Ranked #1 on G2" & "Secure connections"
+           ======================================================================== -->
+      <section class="v2-section top-round" id="security">
+        <div class="v2-container">
+          
+          <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+            <h2 class="section-title">Ranked #1 on G2 Worldwide</h2>
+            <p class="hero-subtitle">Bank-grade security, enterprise governance, and global data privacy standards built into every layer.</p>
+          </div>
+
+          <div class="security-grid">
+            <div class="security-tile">
+              <div class="security-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h4>SOC 2 Type II Certified</h4>
+              <p>Independently audited controls verifying enterprise-level security, availability, and confidential data protection.</p>
+            </div>
+            <div class="security-tile">
+              <div class="security-badge-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <h4>GDPR & CCPA Compliant</h4>
+              <p>Full compliance with European and Californian data protection regulations, with granular opt-out and consent workflows.</p>
+            </div>
+            <div class="security-tile">
+              <div class="security-badge-icon">
+                <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+              <h4>SSO & SCIM Directory</h4>
+              <p>SAML 2.0 single sign-on with Okta, Microsoft Azure AD, Google Workspace, and automated employee onboarding via SCIM.</p>
+            </div>
+            <div class="security-tile">
+              <div class="security-badge-icon">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <h4>99.99% Guaranteed SLA</h4>
+              <p>High-availability globally distributed architecture ensuring your contactless cards and links are always accessible.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================================
+           SECTION 9: TESTIMONIALS (.v2-section.top-round.for-testi)
+           "Loved by professional optimists globally"
+           ======================================================================== -->
+      <section class="v2-section top-round for-testi" id="testimonials">
+        <div class="v2-container">
+          
+          <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">Loved by professional optimists globally</h2>
+            <p class="hero-subtitle">Real feedback from founders, sales directors, and enterprise executives who switched to Taggy.</p>
+          </div>
+
+          <div class="testimonials-grid">
+            
+            <div class="testi-card">
+              <div class="testi-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="testi-quote">"The tactile embossed card feels unbelievable in your hand. When I tap it against someone's phone, people are genuinely stunned."</p>
+              <div class="testi-author">
+                <img src="Images/taggy-logo.jpeg" alt="Marcus Vance" class="testi-avatar">
+                <div>
+                  <div class="testi-name">Marcus Vance</div>
+                  <div class="testi-role">Managing Partner &bull; Vance Capital</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testi-card">
+              <div class="testi-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="testi-quote">"We rolled out Taggy to 400 sales representatives. Centralizing templates and syncing directly to HubSpot was effortlessly smooth."</p>
+              <div class="testi-author">
+                <img src="Images/taggy-logo.jpeg" alt="Elena Rostova" class="testi-avatar">
+                <div>
+                  <div class="testi-name">Elena Rostova</div>
+                  <div class="testi-role">VP Global Revenue &bull; CloudPulse</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testi-card">
+              <div class="testi-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff492c"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="testi-quote">"Our follow-up rate at conferences jumped from 18% to over 64%. The context notes and automatic enrichment are game changers."</p>
+              <div class="testi-author">
+                <img src="Images/taggy-logo.jpeg" alt="David Kalu" class="testi-avatar">
+                <div>
+                  <div class="testi-name">David Kalu</div>
+                  <div class="testi-role">Co-Founder &bull; OmniScale</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================================
+           SECTION 10: FAQ ACCORDION (.v2-section.top-round.home-faq)
+           "Got a few questions? We're happy to answer them."
+           ======================================================================== -->
+      <section class="v2-section top-round home-faq" id="faq">
+        <div class="v2-container">
+          
+          <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title">Got a few questions? We're happy to answer them.</h2>
+            <p class="hero-subtitle">Everything you need to know about Taggy smart cards and enterprise rollouts.</p>
+          </div>
+
+          <div class="faq-grid">
+            
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I create a digital business card?</span>
+                <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+              </button>
+              <div class="faq-answer">
+                <p>Creating your Taggy card takes less than two minutes. Choose your template, enter your contact information, upload your logo, and your digital business card is instantly live and ready to share via QR, Apple Wallet, or link.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I get Taggy for my team or business?</span>
+                <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+              </button>
+              <div class="faq-answer">
+                <p>You can sign up for a team account in the dashboard or book a demo with our enterprise specialists. We provide centralized billing, employee directory sync (SCIM), template locking, and custom embossed batch card production.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Is Taggy free to use?</span>
+                <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! Our individual digital card is completely free forever. You can create your card, share via QR code or link, and receive contacts without paying a cent. Physical embossed cards and enterprise team features are available as upgrades.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How much does a physical Taggy card cost?</span>
+                <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+              </button>
+              <div class="faq-answer">
+                <p>Physical custom embossed Taggy cards are a one-time purchase with no mandatory monthly subscription. Premium matte cards start at $29 with free worldwide shipping.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do I share my card with someone who doesn't have the app?</span>
+                <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+              </button>
+              <div class="faq-answer">
+                <p>Recipients do not need the Taggy app or any software installed! When you tap your card to their smartphone or show your QR code, your interactive profile opens immediately in their default browser, and they can save your vCard directly into their phone contacts.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How do NFC business cards work?</span>
+                <span class="faq-chevron"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+              </button>
+              <div class="faq-answer">
+                <p>Taggy cards contain an embedded contactless smart NFC chip and high-density antenna. When brought within 2-4 centimeters of a smartphone, the phone wirelessly reads your encrypted link and opens your card instantly.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================================
+           SECTION 11: PRE-FOOTER BANNER (.v2-section.top-round.for-home-end-section)
+           "For contacts that stay in contact"
+           ======================================================================== -->
+      <section class="v2-section top-round for-home-end-section" id="prefooter">
+        <div class="v2-container">
+          
+          <div class="prefooter-inner">
+            <div>
+              <h2 class="section-title">For contacts that stay in contact</h2>
+              <p class="hero-subtitle" style="text-align: left; margin: 1.5rem 0 2.5rem;">
+                Use Taggy to capture crucial context, spot opportunities, and turn a good meeting into brilliant business.
+              </p>
+              <div class="btn-wrap" style="justify-content: flex-start;">
+                <a href="#" class="button-pri">Get your Taggy business card</a>
+                <a href="#team-control" class="button-pri black">Book a demo</a>
+              </div>
+            </div>
+
+            <div class="prefooter-visual">
+              <div class="contact-exchange-card">
+                <div class="exchange-badge-check">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="exchange-title">Yes. Done!</div>
+                <p style="font-size: 0.95rem; color: #555; margin-bottom: 1.5rem;">Contact exchanged and verified in seconds.</p>
+                <div style="background: #faf6ed; border-radius: 16px; padding: 1.25rem; display: flex; align-items: center; gap: 1rem; text-align: left;">
+                  <img src="Images/taggy-logo.jpeg" alt="Cole Mercer" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+                  <div>
+                    <div style="font-weight: 700; color: #1f1511;">Cole Mercer</div>
+                    <div style="font-size: 0.8rem; color: #777;">VP North America Sales &bull; AEREN</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ========================================================================
+         SECTION 12: EXACT BLINQ FOOTER (.v2-section.top-round.v2-footer)
+         ======================================================================== -->
+    <footer class="v2-section top-round v2-footer" id="footer">
+      <div class="v2-container">
+        
+        <!-- Top Row with Quick Actions -->
+        <div class="footer-top-row">
+          <div class="footer-action-pills">
+            <a href="#prefooter" class="button-pri black">Get your Taggy business card</a>
+            <a href="#prefooter" class="button-pri outline">Login</a>
+          </div>
+        </div>
+
+        <!-- 4 Column Directory Grid -->
+        <div class="footer-columns-grid">
+          
+          <div class="footer-brand-col">
+            <a href="#" class="nav-logo" style="margin-bottom: 1.25rem; display: inline-block;" aria-label="Taggy Home">
+              <img src="Images/taggy-logo-transparent.png" alt="Taggy Logo" class="taggy-logo-img logo-light">
+              <img src="Images/taggy-logo-white.png" alt="Taggy Logo" class="taggy-logo-img logo-dark">
+            </a>
+            <p>Get your Taggy business card &bull; The smart contacts platform for the real world. Empowering professionals and enterprise teams worldwide.</p>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Product</div>
+            <ul class="footer-links-list">
+              <li><a href="#sticky-cards" class="footer-link">Digital Business Cards</a></li>
+              <li><a href="#bento-share" class="footer-link">NFC Business Cards</a></li>
+              <li><a href="#bento-share" class="footer-link">Email Signatures</a></li>
+              <li><a href="#bento-share" class="footer-link">Apple & Google Wallet</a></li>
+              <li><a href="#bento-share" class="footer-link">Smart Watch App</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Solutions</div>
+            <ul class="footer-links-list">
+              <li><a href="#team-pipeline" class="footer-link">Event Lead Capture</a></li>
+              <li><a href="#team-control" class="footer-link">Brand & Template Control</a></li>
+              <li><a href="#integrations" class="footer-link">CRM Integrations</a></li>
+              <li><a href="#team-control" class="footer-link">For Enterprise Teams</a></li>
+              <li><a href="#transformation" class="footer-link">Custom Embossing</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Company</div>
+            <ul class="footer-links-list">
+              <li><a href="#hero" class="footer-link">About Taggy</a></li>
+              <li><a href="#testimonials" class="footer-link">Customer Stories</a></li>
+              <li><a href="#security" class="footer-link">Trust & Security</a></li>
+              <li><a href="#faq" class="footer-link">FAQ & Help Center</a></li>
+              <li><a href="#prefooter" class="footer-link">Contact Sales</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Trust & Legal</div>
+            <ul class="footer-links-list">
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Security Whitepaper</a></li>
+              <li><a href="#" class="footer-link">SOC 2 Compliance</a></li>
+              <li><a href="#" class="footer-link">System Status</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Bottom Copyright & Social Links -->
+        <div class="footer-bottom-row">
+          <div>&copy; 2026 Taggy Inc. All rights reserved. Built with precision and craftsmanship.</div>
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

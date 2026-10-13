@@ -1,0 +1,14 @@
+# Development and extraction scripts
+scratch/
+
+# Reference mockups and dumps
+blinq_page.html
+blinq_page_utf8.html
+taggy-logo.jpeg
+
+# OS & Editor artifacts
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
